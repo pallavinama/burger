@@ -8,19 +8,20 @@ var burger = require('../models/burger.js');
 // Index Redirect
 router.get('/', function (req, res) 
 {
-  // res.redirect('/index');
-  console.log("in /");
+   res.redirect('/index');
+  // console.log("in /");
 });
 
 // Index Page 
 router.get('/index', function (req, res) 
 {
-  burger.selectAll(function(data) 
-  {
-    var hbsObject = { burgers: data };
-    //console.log(hbsObject);
-    res.render('index', hbsObject);
-  });
+  res.send("welcome page");
+//   burger.selectAll(function(data) 
+//   // {
+//   //   var hbsObject = { burgers: data };
+//   //   //console.log(hbsObject);
+//   //   res.render('index', hbsObject);
+//   // });
 });
 
 // Create a New Burger
