@@ -8,7 +8,8 @@ var burger = require('../models/burger.js');
 // Index Redirect
 router.get('/', function (req, res) 
 {
-  res.redirect('/index');
+  // res.redirect('/index');
+  console.log("in /");
 });
 
 // Index Page 
