@@ -12,7 +12,11 @@ Basically it allows the user to add items to a database, view all the items in t
 
 This app is deployed on Heroku and utilizes a JAWSDB MySQL database to store all data. It uses Express web server.
 
-![image](https://user-images.githubusercontent.com/61402034/79058713-563f6300-7c3f-11ea-8937-b867fed43089.png)
+
+
+![image](https://user-images.githubusercontent.com/61402034/79058926-cea72380-7c41-11ea-914b-5ae6cd585bc8.png)
+
+
 
 Technologies used:
 
