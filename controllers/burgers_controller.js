@@ -20,14 +20,14 @@ router.get('/index', function (req, res) {
 
 // Create a New Burger
 router.post('/burger/create', function (req, res) {
-  burger.insertOne(req.body.burger_name, req.body.devoured, function() {
+  burger.insertOne(req.body.burgerName, "0", function() {
     res.redirect('/index');
   }); 
 });
 
 // Devour a Burger
-router.post('/burger/devour/:id', function (req, res) {
-  burger.updateOne(req.params.id, function() {
+router.post('/burger/devour/', function (req, res) {
+  burger.updateOne(req.body.burgerId, function() {
     res.redirect('/index');
   });
 });
